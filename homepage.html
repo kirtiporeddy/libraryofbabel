@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Change text every 3 seconds</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta https-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styler.css" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="slanttop">
+        <header>
+
+            <div class="library">
+                <div class="lo">
+                <h1>LIBRARY OF </h1>
+                </div>
+                
+            </div>
+            <div class="waviy">
+                <span style="--i:1">B</span>
+                <span style="--i:2">a</span>
+                <span style="--i:3">b</span>
+                <span style="--i:4">e</span>
+                <span style="--i:5">l</span>
+            </div>
+            
+            <!-- <div class="waviy">
+                <span style="--i:1">B</span>
+                <span style="--i:2">a</span>
+                <span style="--i:3">b</span>
+                <span style="--i:4">e</span>
+                <span style="--i:5">l</span>
+            </div> -->
+        
+        
+          </header>
+        
+            
+            <div id="scroll-container">
+                <div id="scroll-text">
+                    <h3>This excerpt was written by Jorge Luis Borges//This excerpt was written by Jorge Luis Borges//This excerpt was written by Jorge Luis Borges//This excerpt was written by Jorge Luis Borges//This excerpt was written by Jorge Luis Borges.</h3>
+                </div>
+           </div>
+        </header>        
+    </div>
+    
+    
+
+    <div class="allslants">
+       
+        <div class="slantone">
+            <div class="container">
+              <div class="animated-heading">
+                <a href="pages/page2/page2.html">
+                  <span id="wordsone"><strong>LIBRARY OF BABEL</strong></span></h1> </a>
+              </div>
+            </div>
+          </div>
+          
+
+        <div class="slanttwo">
+          <div class="row-outertwo">
+            <div class="containertwo">
+                <div class="animated-headingtwo">
+                  <a href="pages/page1/page1.html"> 
+                <span id="wordstwo"><strong>LIBRARY OF BABEL</strong></span></h1></a>
+                </div>
+            </div>
+           </div>
+        </div>
+
+        <div class="slantthree">
+            <div class="row-outerthree">
+            <div class="containerthree">
+                <div class="animated-headingthree">
+                  <a href="pages/page6/page6.html">
+                <span id="wordsthree"><strong>LIBRARY OF BABEL</strong></span></h1></a>
+                </div>
+             </div>
+            </div>
+                
+        </div>
+
+        <div class="slantedfour">
+        <div class="row-outerfour">
+          <div class="containerfour">
+            <div class="animated-headingfour">
+              <a href="pages/page3/page3.html">
+               <span id="wordsfour"><strong>LIBRARY OF BABEL</strong></span></h1></a>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+
+
+        <div class="slantedfive">
+        <div class="row-outerfive">
+          <div class="containerfive">
+            <div class="animated-headingfive">
+              <a href="pages/page5/page5.html">
+               <span id="wordsfive"><strong>LIBRARY OF BABEL</strong></span></h1></a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+
+        <div class="slantedsix">
+        <div class="row-outersix">
+          <div class="containersix">
+            <div class="animated-headingsix">
+              <a href="pages/page4/page4.html">
+               <span id="wordssix"><strong>LIBRARY OF BABEL</strong></span></h1></a>
+            </div>
+          </div>
+        </div>   
+        </div>
+    </div>
+
+   
+   
+
+<script type="text/javascript">
+    (function () {
+      var words = ["<strong>LIBRARY OF BABEL</strong>","LIBRARY OF BABEL"],
+      i = 0;
+      setInterval(function(){ $('#wordsone').fadeOut(function(){
+          $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+        }); }, 1500)
+    })();
+  </script>
+
+<script type="text/javascript">
+    (function () {
+        var words = [  "LIBRARY OF BABEL", "<strong>LIBRARY OF BABEL</strong>"],
+        i = 0;
+        setInterval(function(){ $('#wordstwo').fadeOut(function(){
+            $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+        }); }, 1500)
+    })();
+    </script>
+
+<script type="text/javascript">
+    (function () {
+        var words = [ "<strong>LIBRARY OF BABEL</strong>","LIBRARY OF BABEL"],
+        i = 0;
+        setInterval(function two(){ $('#wordsthree').fadeOut(function(){
+            $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+        }); }, 1500)
+    })();
+    </script>
+
+<script type="text/javascript">
+    (function () {
+      var words = [ "LIBRARY OF BABEL","<strong>LIBRARY OF BABEL</strong>",],
+      i = 0;
+      setInterval(function(){ $('#wordsfour').fadeOut(function(){
+          $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+        }); }, 1500)
+    })();
+  </script>
+
+<script type="text/javascript">
+    (function () {
+      var words = ["LIBRARY OF BABEL", "<strong>LIBRARY OF BABEL</strong>"],
+      i = 0;
+      setInterval(function(){ $('#wordsfive').fadeOut(function(){
+          $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+        }); }, 1500)
+    })();
+  </script>
+
+
+<script type="text/javascript">
+    (function () {
+      var words = [ "<strong>LIBRARY OF BABEL</strong>", "LIBRARY OF BABEL"],
+      i = 0;
+      setInterval(function(){ $('#wordssix').fadeOut(function(){
+          $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+        }); }, 1500)
+    })();
+  </script>
+
+  </body>
+</html>
