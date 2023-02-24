@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Change text every 3 seconds</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta https-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="page3.css" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+
+
+<body>
+
+
+    <div class="a">
+    <img src="images/hexfin.png">
+    </div>
+    <div class="b">
+      <img src="images/hexfin.png">
+     </div>
+    <div class="c">
+     <img src="images/hexfin.png"> 
+    </div>
+    <div class="e">
+        <img src="images/hexfin.png">
+        </div>
+    <div class="d">
+      <img src="images/hexfin.png"> 
+    </div>
+  </div>
+
+  <script src="page3.js" type="text/javascript"></script>
+
+
+  <div class="chapter">
+    Chapter 3
+    </div>
+
+   
+     
+    
+
+    
+ <div class="para">
+        <div class="one">
+          The content was also deciphered: some notions of combinative analysis, illustrated with examples of variations with unlimited repetition. These examples made it possible for a librarian of genius to discover the fundamental law of the Library. This thinker observed that all the books, no matter how diverse they might be, are made up of the same elements: the space, the period, the comma, the twenty-two letters of the alphabet. He also alleged a fact which travelers have confirmed: In the vast Library there are no two identical books. From these two incontrovertible premises he deduced that the Library is total and that its shelves register all the possible combinations of the twenty-odd orthographical symbols (a number which, though extremely vast, is not infinite): Everything: the minutely detailed history of the future, the archangels' autobiographies, the faithful catalogues of the Library, thousands and thousands of false catalogues, the demonstration of the fallacy of those catalogues, the demonstration of the fallacy of the true catalogue, the Gnostic gospel of Basilides, the commentary on that gospel, the commentary on the commentary on that gospel, the true story of your death, the translation of every book in all languages, the interpolations of every book in all books.
+            When it was proclaimed that the Library contained all books, the first impression was one of extravagant happiness. All men felt themselves to be the masters of an intact and secret treasure. There was no personal or world problem whose eloquent solution did not exist in some hexagon. The universe was justified, the universe suddenly usurped the unlimited dimensions of hope. At that time a great deal was said about the Vindications: books of apology and prophecy which vindicated for all time the acts of every man in the universe and retained prodigious arcana for his future. Thousands of the greedy abandoned their sweet native hexagons and rushed up the stairways, urged on by the vain intention of finding their Vindication. These pilgrims disputed in the narrow corridors, proferred dark curses, strangled each other on the divine stairways, flung the deceptive books into the air shafts, met their death cast down in a similar fashion by the inhabitants of remote regions. Others went mad... The Vindications exist (I have seen two which refer to persons of the future, to persons who are perhaps not imaginary) but the searchers did not remember that the possibility of a man's finding his Vindication, or some treacherous variation thereof, can be computed as zero.
+
+
+        </div>
+        <div class="two">
+
+            At that time it was also hoped that a clarification of humanity's basic mysteries - the origin of the Library and of time - might be found. It is verisimilar that these grave mysteries could be explained in words: if the language of philosophers is not sufficient, the multiform Library will have produced the unprecedented language required, with its vocabularies and grammars. For four centuries now men have exhausted the hexagons... There are official searchers, inquisitors. I have seen them in the performance of their function: they always arrive extremely tired from their journeys; they speak of a broken stairway which almost killed them; they talk with the librarian of galleries and stairs; sometimes they pick up the nearest volume and leaf through it, looking for infamous words. Obviously, no one expects to discover anything.
+
+
+
+          </div>
+<div class="three">
+   
+
+        </div>
+
+        
+</div>
+
+<div id="scroll-container">
+    <div id="scroll-text"> Library of Babel   Library of Babel    Library of Babel   Library of Babel    Library of Babel    Library of Babel   Library of Babel    Library of Babel    Library of Babel   Library of Babel </div>
+  </div>
+  
+  <div class="next">
+
+    <a href="../page4/page4.html">Next Chapter</a>
+  </div>
+
+
+    
+<script type="text/javascript">
+  // Define the characters to use for glitching
+  const glitchChars = "&^%(*&^%$#@123456788901234567--;;;>.,<?:;{[}]|\!~``HYTRESDCVBNMJUYTRDSASDF$#@!";
+  
+  // Get all elements with class "para"
+  const elements = document.querySelectorAll(".para");
+  
+  // Define a function to randomly replace some characters in a string with glitch characters
+  function glitchString(str) {
+    // Convert the string to an array of characters
+    const chars = str.split("");
+    // Choose a random number of indices to replace
+    const numGlitches = Math.ceil(chars.length * 0.01);
+    // Choose random indices to replace with glitch characters
+    const glitchIndices = new Set();
+    while (glitchIndices.size < numGlitches) {
+      glitchIndices.add(Math.floor(Math.random() * chars.length));
+    }
+    // Replace the chosen indices with random glitch characters
+    for (const index of glitchIndices) {
+      chars[index] = glitchChars[Math.floor(Math.random() * glitchChars.length)];
+    }
+    // Convert the array of characters back to a string
+    return chars.join("");
+  }
+  
+  // Loop over the elements and glitch their text
+  elements.forEach((element) => {
+    // Save the original text
+    const originalText = element.innerText;
+    // Define a function to continuously glitch the text
+    function glitch() {
+      // Generate a glitched version of the original text
+      const glitchedText = glitchString(originalText);
+      // Set the element's text to the glitched version
+      element.innerText = glitchedText;
+      // Schedule the next glitch in a random amount of time
+      setTimeout(glitch, Math.random() * 0.001);
+    }
+    // Start glitching the text
+    glitch();
+  });
+  
+  </script>
+    
+  </body>
+  </html>

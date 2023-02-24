@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Change text every 3 seconds</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta https-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="page2.css" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+
+
+<body>
+
+
+    <div class="a">
+    <img src="images/hexfin.png">
+    </div>
+    <div class="b">
+      <img src="images/hexfin.png">
+     </div>
+    <div class="c">
+     <img src="images/hexfin.png"> 
+    </div>
+    <div class="e">
+        <img src="images/hexfin.png">
+        </div>
+    <div class="d">
+      <img src="images/hexfin.png"> 
+    </div>
+  </div>
+
+  <script src="page2.js" type="text/javascript"></script>
+
+
+  <div class="chapter">
+    Chapter 2
+    </div>
+
+   
+     
+    
+
+    
+ <div class="para">
+        <div class="one">
+            First: The Library exists ab aeterno. This truth, whose immediate corollary is the future eternity of the world, cannot be placed in doubt by any reasonable mind. Man, the imperfect librarian, may be the product of chance or of malevolent demiurgi; the universe, with its elegant endowment of shelves, of enigmatical volumes, of inexhaustible stairways for the traveler and latrines for the seated librarian, can only be the work of a god. To perceive the distance between the divine and the human, it is enough to compare these crude wavering symbols which my fallible hand scrawls on the cover of a book, with the organic letters inside: punctual, delicate, perfectly black, inimitably symmetrical.
+
+Second: The orthographical symbols are twenty-five in number.^ This finding made it possible, three hundred years ago, to formulate a general theory of the Library and solve satisfactorily the problem which no conjecture had deciphered: the formless and chaotic nature of almost all the books. One which my father saw in a hexagon on circuit fifteen ninety-four was made up of the letters MCV, perversely repeated from the first line to the last. Another (very much consulted in this area) is a mere labyrinth of letters, but the next-to-last page says Oh time thy pyramids. This much is already known: for every sensible line of straightforward statement, there are leagues of senseless cacophonies, verbal jumbles and incoherences. (I know of an uncouth region whose librarians repudiate the vain and superstitious custom of finding a meaning in books and equate it with that of finding a meaning in dreams or in the chaotic lines of one's palm... They admit that the inventors of this writing imitated the twenty-five natural symbols, but maintain that this application is accidental and that the books signify nothing in themselves. This dictum, we shall see, is not entirely fallacious.)
+
+
+        </div>
+        <div class="two">
+
+            <br><br><br>For a long time it was believed that these impenetrable books corresponded to past or remote languages. It is true that the most ancient men, the first librarians, used a language quite different from the one we now speak; it is true that a few miles to the right the tongue is dialectical and that ninety floors farther up, it is incomprehensible. All this, I repeat, is true, but four hundred and ten pages of inalterable MCV's cannot correspond to any language, no matter how dialectical or rudimentary it may be. Some insinuated that each letter could influence the following one and that the value of MCV in the third line of page 71 was not the one the same series may have in another position on another page, but this vague thesis did not prevail. Others thought of cryptographs; generally, this conjecture has been accepted, though not in the sense in which it was formulated by its originators.
+
+            Five hundred years ago, the chief of an upper hexagon 2 came upon a book as confusing as the others, but which had nearly two pages of homogeneous lines. He showed his find to a wandering decoder who told him the lines were written in Portuguese; others said they were Yiddish. Within a century, the language was established: a Samoyedic Lithuanian dialect of Guarani, with classical Arabian inflections. 
+            
+          </div>
+<div class="three">
+   
+
+        </div>
+
+        
+</div>
+
+<div id="scroll-container">
+    <div id="scroll-text"> Library of Babel   Library of Babel    Library of Babel   Library of Babel    Library of Babel    Library of Babel   Library of Babel    Library of Babel    Library of Babel   Library of Babel </div>
+  </div>
+  
+  <div class="next">
+
+    <a href="../page3/page3.html">Next Chapter</a>
+  </div>
+
+    
+<script type="text/javascript">
+  // Define the characters to use for glitching
+  const glitchChars = "&^%(*&^%$#@123456788901234567--;;;>.,<?:;{[}]|\!~``HYTRESDCVBNMJUYTRDSASDF$#@!";
+  
+  // Get all elements with class "para"
+  const elements = document.querySelectorAll(".para");
+  
+  // Define a function to randomly replace some characters in a string with glitch characters
+  function glitchString(str) {
+    // Convert the string to an array of characters
+    const chars = str.split("");
+    // Choose a random number of indices to replace
+    const numGlitches = Math.ceil(chars.length * 0.01);
+    // Choose random indices to replace with glitch characters
+    const glitchIndices = new Set();
+    while (glitchIndices.size < numGlitches) {
+      glitchIndices.add(Math.floor(Math.random() * chars.length));
+    }
+    // Replace the chosen indices with random glitch characters
+    for (const index of glitchIndices) {
+      chars[index] = glitchChars[Math.floor(Math.random() * glitchChars.length)];
+    }
+    // Convert the array of characters back to a string
+    return chars.join("");
+  }
+  
+  // Loop over the elements and glitch their text
+  elements.forEach((element) => {
+    // Save the original text
+    const originalText = element.innerText;
+    // Define a function to continuously glitch the text
+    function glitch() {
+      // Generate a glitched version of the original text
+      const glitchedText = glitchString(originalText);
+      // Set the element's text to the glitched version
+      element.innerText = glitchedText;
+      // Schedule the next glitch in a random amount of time
+      setTimeout(glitch, Math.random() * 0.001);
+    }
+    // Start glitching the text
+    glitch();
+  });
+  
+  </script>
+    
+  </body>
+  </html>

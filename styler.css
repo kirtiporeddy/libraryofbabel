@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'helvetica', sans-serif;
+}
+
+body {
+  background-color: black;
+}
+.container {
+    width: 95%;
+    max-width: 1160px;
+    margin: auto;
+}
+
+h1 {
+    color:white;
+    font-weight: 500;
+    font-family: Helvetica, sans-serif;
+}
+span#wordsone,
+span#wordstwo,
+span#wordsthree,
+span#wordsfour,
+span#wordsfive,
+span#wordssix {
+    font-weight: normal;
+    color: white;
+}
+
+
+.animated-heading {
+  position:relative;right:-155px; top:365px;
+ font-size:20px;
+ transform: rotate(60.0deg);
+ skew(0deg);
+ 
+}
+.animated-headingtwo{
+ font-size:20px;
+  skew(0deg);
+   position:relative;right:0px; top:250px;
+  
+}
+
+.animated-headingthree{
+   position:relative;right:160px; top:320px;
+ font-size:20px;
+ transform: rotate(-60.0deg);
+ skew(0deg);
+ 
+
+}
+
+.animated-headingfour{
+
+   position:relative;right:-160px; top:490px;
+ font-size:20px;
+ transform: rotate(120.0deg);
+ skew(0deg);
+ 
+
+ }
+
+.animated-headingfive{
+
+    position:relative;right:170px; top:465px;
+ font-size:20px;
+ transform: rotate(-120.0deg);
+ skew(0deg);
+ 
+}
+
+.animated-headingsix{
+  font-size:20px;
+  skew(0deg);
+   position:relative;right:0px; top:535px;
+  
+}
+
+#scroll-container {
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  height: 3400px;
+  
+  position:absolute;
+  
+}
+
+#scroll-text {
+  /* animation properties */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 10s linear infinite;
+  -webkit-animation: my-animation 10s linear infinite;
+  animation: my-animation 10s linear infinite;
+  color: white;
+  font-family: 'Pinyon Script', cursive;   
+   position:absolute; 
+  position:relative;  left:0px; top:-350px;
+  font-size: 25px;
+   white-space: nowrap;
+  margin-top:800px !important;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+}
+
+.waviy {
+  position: absolute;
+  display: inline;
+}
+.waviy span {
+  font-family: 'Pinyon Script', cursive; ;
+  position: absolute;
+  position: relative;left:58px; top: 10px;
+  display: inline-block;
+  font-size: 400px;
+  color: #fff;
+  display: inline;
+  white-space: nowrap;
+  opacity: .39;
+  
+  animation: flip 1.5s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip 
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+
+  h3 {
+      font-family: 'Pinyon Script', cursive; 
+      color: white;
+     left:552px; top:107px;
+  }
+
+.library {
+  margin-left: 50%;
+  margin-right: 30%; 
+  position: absolute;
+  display: inline-block;
+white-space: nowrap;
+  align-items: center;
+  display: flex;
+transform: translateX(-50%)
+ position: relative;right:0px; top:30px;
+font-size: 50px
+
+}
+
+.images {
+  max-width: 10%;
+  max height: 10%;
+}
+
+.test{
+  position: relative;
+  color: white !important;
+  font-size: 25px;
+  /* text-align: center; */
+  /* left: 50em; */
+}
+
+.allslants{
+   margin-left: 50%;
+  margin-right: 50%; 
+  position: absolute;
+   display: inline-block;
+  align-items: center;
+ 
+transform: translateX(-50%);
+
+white-space: nowrap;
+
+}
+
+
+
+
+
+
+ a:link {
+  text-decoration: none;
+}

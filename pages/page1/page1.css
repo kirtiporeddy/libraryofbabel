@@ -1,0 +1,208 @@
+body {
+  background-color: black;
+  }
+  
+  
+  
+  div.a {
+  width: 50px;
+  height:50px;
+  
+  position:fixed;
+      
+  }
+  
+  div.b {
+  width: 50px;
+  height:50px;
+   
+  position:fixed;
+      
+  }
+  div.c {
+  width: 50px;
+  height:50px;
+   
+  position:fixed;
+      
+  }
+  div.d {
+  width: 50px;
+  height:50px;
+
+  position:fixed;
+      
+  }
+  div.e {
+      width: 50px;
+      height:50px;
+ 
+      position:fixed;
+  }
+
+
+ 
+
+.para {
+color:white;
+font-family: 'helvetica', sans-serif;
+position:absolute;
+letter-spacing: -1px;
+  display: flex;
+      width: 48vw;
+      height: 40vh;
+      justify-content: space-around;
+     margin-right: 0vh;
+   position: relative;right:-370px; top:-53px;
+
+}
+
+
+.first {
+  position: relative;right:500px; top:750px;
+
+
+}
+.chapter {
+  margin-left: 50%;
+  margin-right: 55vh; 
+  position: absolute;
+  display: inline-block;
+white-space: nowrap;
+  align-items: center;
+  display: flex;
+transform: translateX(-50%)
+ position: absolute;
+  position: relative;right:560px; top:403px;
+font-size: 130px;
+color: #fff;
+font-family: 'Helvetica', sans serif; 
+transform: rotate(-90deg);
+ }
+
+.next {
+  font-size: 15px;
+  font-family: 'Pinyon', cursive;
+  color: white;
+position:absolute;right:200px; top:394px;
+  transform: rotate(90deg);
+
+}
+
+
+a {
+  text-decoration: none; /* remove the underline */
+  color: white; /* set the color to white */
+}
+
+#scroll-container {
+
+border-radius: 5px;
+overflow: hidden;
+transform: rotate(90deg);
+width: 1500px;
+position: absolute;
+position: relative;right: 570px; top: 344px;
+}
+
+#scroll-text {
+-moz-transform: translateX(100%);
+-webkit-transform: translateX(100%);
+transform: translateX(100%);
+-moz-animation: new-animation 15s linear infinite;
+-webkit-animation: new-animation 15s linear infinite;
+animation: new-animation 15s linear infinite;
+color: white;
+font-family: 'Pinyon', cursive;
+font-size: 20px;
+display: inline-flex;
+white-space: nowrap;
+}
+
+@-moz-keyframes new-animation {
+from { -moz-transform: translateX(100%); }
+to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes new-animation {
+from { -webkit-transform: translateX(100%); }
+to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes new-animation {
+from {
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+to {
+  -moz-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+}
+
+/*
+div.para {
+animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch{
+2%,64%{
+  transform: translate(15px,0) skew(0deg);
+}
+4%,60%{
+  transform: translate(0px,20) skew(0deg);
+}
+62%{
+  transform: translate(-15,0) skew(0deg);
+}
+}
+
+div.para:before,
+div.para:after{
+content: attr(title);
+position: absolute;
+left: 0;
+}
+
+div.para:before{
+animation: glitchTop 1s linear infinite;
+clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+2%,64%{
+  transform: translate(2px,-2px);
+}
+4%,60%{
+  transform: translate(-2px,2px);
+}
+62%{
+  transform: translate(13px,-1px) skew(-13deg); 
+}
+}
+
+div.para:after{
+animation: glitchBotom 1.5s linear infinite;
+clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+-webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+2%,64%{
+  transform: translate(-2px,0);
+}
+4%,60%{
+  transform: translate(-2px,0);
+}
+62%{
+  transform: translate(-22px,5px) skew(21deg); 
+}
+
+
+
+}
+*/
